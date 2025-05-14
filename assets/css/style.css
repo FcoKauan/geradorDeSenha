@@ -66,14 +66,14 @@ input:focus {
     padding: 0.6rem 0;
 }
 
-#criar--senha {
+#abrir--criar--senha {
     color: grey;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
-#criar--senha:hover {
+#abrir--criar--senha:hover {
     color: #1b83f9;
 }
 
@@ -94,7 +94,9 @@ input:focus {
     margin-bottom: 1rem;
 }
 
-.registro--form input[type="submit"] {
+.registro--form input[type="submit"],
+#senha--options button,
+#copiar--senha {
     font-weight: bold;
     color: #fff;
     background: #1c84f4;
@@ -109,5 +111,46 @@ input:focus {
 
 .registro--form input[type="submit"]:hover {
     opacity: 1;
+}
+
+/* Novas funcionalidades */
+#senha--options {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #CCC;
+}
+
+#senha--options label {
+    font-size: 0.8rem;
+}
+
+#senha--options .controle--form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#senha--options .controle--form input[type="text"] {
+    width: 30px;
+    border: 1px solid #CCC;
+    text-align: center;
+}
+
+#senha--options button {
+    background-color: #1fda1f;
+    display: block;
+    margin: 0 auto;
+}
+
+#copiar--senha {
+    margin: 1rem auto;
+    background-color: transparent;
+    border: 2px solid #1b83f9;
+    color: #1b83f9;
+    padding: 0.5rem 1rem;
+}
+
+.hide {
+    display: none;
 }
 

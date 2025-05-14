@@ -29,10 +29,10 @@
             </div>
         
             <p>Não sabe que senha criar?
-                <span id="criar--senha">Clique aqui.</span>
+                <span id="abrir--criar--senha">Clique aqui.</span>
             </p>
 
-            <div class="senha--options">
+            <div id="senha--options" class="hide">
                 <p>Selecione as opções que você deseja</p>
                 <div class="controle--form">
                     <label for="length">Quantidade de caracteres:</label>
@@ -50,12 +50,14 @@
                     <label for="simbolos">Símbolos:</label>
                     <input type="checkbox" id="simbolos" name="simbolos" checked>
                 </div>
+
+                <button id="criar--senha">Criar senha</button>
             </div>
 
             <div id="senha--criada">
                 <p>Sua senha criada é essa: </p>
                 <h4></h4>
-                <button id="copiarSenha"> Copiar </button>
+                <button id="copiar--senha"> Copiar </button>
             </div>
             <div class="controle--form">
                 <label for="senha"> Confirmar senha: </label>
