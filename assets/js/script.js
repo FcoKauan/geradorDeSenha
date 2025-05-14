@@ -11,6 +11,7 @@ const numerosInput = document.querySelector("#numeros");
 const simbolosInput = document.querySelector("#simbolos");
 const copiarSenhaBtn = document.querySelector("#copiar--senha");
 
+
 // funções
 const getLetraMinuscula = () => {
     // letras minusculas atraves da tabela dos codigos das letras
@@ -81,6 +82,23 @@ btnCriarSenha.addEventListener("click", () => {
         getSimbolos
     );
 });
+
+//eventos - novas funcionalidades
 abrirFecharSenhaBtn.addEventListener("click", () => {
     criarSenhaContainer.classList.toggle("hide");
 })
+
+copiarSenhaBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const senha = senhaCriada.querySelector("h4").innerText;
+
+    navigator.clipboard.writeText(senha).then(() => {
+        copiarSenhaBtn.innerText = "Senha Copiada";
+
+        setTimeout(() => {
+            copiarSenhaBtn.innerText = "Copiar";
+        }, 1000)
+    });
+});
+
