@@ -1,3 +1,113 @@
 * {
-    background: red;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
+html, body {
+    height: auto;
+    min-height: 100vh;
+}
+
+/* GRADIENT */
+body {
+    background: linear-gradient(180deg, #1b83f9 0%, #84ccfc 100%);
+}
+input:focus {
+    outline: none;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    min-height: 80vh;
+    margin: 4rem auto;
+    border-radius: 5px;
+    background: #fdfdfd;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.registro--form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro--form h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.registro--form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #AAA;
+    font-size: 0.8rem;
+}
+
+.controle--form {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.controle--form label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.controle--form input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #AAA;
+    padding: 0.6rem 0;
+}
+
+#criar--senha {
+    color: grey;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#criar--senha:hover {
+    color: #1b83f9;
+}
+
+.registro--form #senha--criada {
+    display: none;
+    border: 1px solid #1b83f9;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1.3rem;
+    color: #204262;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.registro--form #senha--criada p {
+    color: #1fda1f;
+    margin-bottom: 1rem;
+}
+
+.registro--form input[type="submit"] {
+    font-weight: bold;
+    color: #fff;
+    background: #1c84f4;
+    opacity: 0.8;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.registro--form input[type="submit"]:hover {
+    opacity: 1;
+}
+
