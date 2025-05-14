@@ -4,32 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <script src="./assets/js/script.js" defer></script>
-    <title> GS - Gerador de Senha </title>
+    <title> GSS - Gerador de Senha </title>
 </head>
 <body>
 
-    <div class="registro--form">
-        <h1> Crie sua conta </h1>
-
-        <p> Registre-se e ultilize o GS </p>
-
-        <div class="controle--form">
-            <label for="name"> nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome: ">
-        </div>
-
-        <div class="controle--form">
-            <label for="email"> E-  mail: </label>
-            <input type="email" name="email" id="email" placeholder="Digite seu email: ">
-        </div>
-
-        <div class="controle--form">
-            <label for="senha"> senha: </label>
-            <input type="password" name="senha" id="senha" placeholder="Crie uma senha:  ">
-        </div>
+    <div id="container">
+        <div class="registro--form">
+            <h1> Crie sua conta </h1>
+            <p> Registre-se e ultilize o GSS - Gerador de Senhas Seguro </p>
+            <div class="controle--form">
+                <label for="name"> Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome ">
+            </div>
+            <div class="controle--form">
+                <label for="email"> E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email ">
+            </div>
+            <div class="controle--form">
+                <label for="senha"> Senha: </label>
+                <input type="password" name="senha" id="senha" placeholder="Crie uma senha  ">
+            </div>
         
+            <p>Não sabe que senha criar?
+                <span id="criar--senha">Clique aqui.</span>
+            </p>
+            <div id="senha--criada">
+                <p>Sua senha criada é essa: </p>
+                <h4></h4>
+            </div>
+            <div class="controle--form">
+                <label for="senha"> Confirmar senha: </label>
+                <input type="password" name="confirmSenha" id="confirmSenha" placeholder="Confirme a sua senha  ">
+            </div>
+            <input type="submit" value="Cadastrar">
+        </div>
     </div>
     
 </body>
