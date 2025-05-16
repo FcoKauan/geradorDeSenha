@@ -115,7 +115,7 @@ input:focus {
 
 /* Novas funcionalidades */
 #senha--options {
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 1rem;
     border: 1px solid #CCC;
 }
@@ -152,5 +152,20 @@ input:focus {
 
 .hide {
     display: none;
+}
+
+@media (max-width: 650px) {
+    #container {
+        box-shadow: none;
+        margin: 0;
+    }
+
+    body {
+        background: #fdfdfdfd;
+    }
+
+    #abrir--criar--senha {
+        color: #1b83f9;
+    }
 }
 
